@@ -48,18 +48,21 @@ function EpisodeEntry({ episode }) {
         <div className="flex flex-col items-start">
           <h2
             id={`episode-${episode.id}-title`}
-            className="mt-2 text-lg font-bold text-slate-900"
+            className="mt-2 text-3xl font-bold text-slate-900"
           >
-            <Link href={`/${episode.id}`}>{episode.title}</Link>
+            <Link href={`/${episode.id}`}>3:30 Fajir</Link>
           </h2>
-          <FormattedDate
+          {/* <FormattedDate
             date={date}
             className="order-first font-mono text-sm leading-7 text-slate-500"
-          />
+          /> */}
+          <p className="order-first font-mono text-sm leading-7 text-slate-500">
+            Praying soon
+          </p>
           <p className="mt-1 text-base leading-7 text-slate-700">
             {episode.description}
           </p>
-          <div className="mt-4 flex items-center gap-4">
+          {/* <div className="mt-4 flex items-center gap-4">
             <button
               type="button"
               onClick={() => player.toggle()}
@@ -89,7 +92,7 @@ function EpisodeEntry({ episode }) {
             >
               Show notes
             </Link>
-          </div>
+          </div> */}
         </div>
       </Container>
     </article>
@@ -112,7 +115,7 @@ export default function Home({ episodes }) {
       <div className="pb-12 pt-16 sm:pb-4 lg:pt-12">
         <Container>
           <h1 className="text-2xl font-bold leading-7 text-slate-900">
-            Episodes
+            Today's Prayers
           </h1>
         </Container>
         <div className="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100">

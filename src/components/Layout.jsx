@@ -145,7 +145,7 @@ function AboutSection(props) {
           colors={['fill-violet-300', 'fill-pink-300']}
           className="h-2.5 w-2.5"
         />
-        <span className="ml-2.5">About</span>
+        <span className="ml-2.5">Attention</span>
       </h2>
       <p
         className={clsx(
@@ -153,13 +153,10 @@ function AboutSection(props) {
           !isExpanded && 'lg:line-clamp-4'
         )}
       >
-        In this show, Eric and Wes dig deep to get to the facts with guests who
-        have been labeled villains by a society quick to judge, without actually
-        getting the full story. Tune in every Thursday to get to the truth with
-        another misunderstood outcast as they share the missing context in their
-        tragic tale.
+        Please kindly switch off your mobile phones and maintain a quiet
+        atmosphere while inside the Mosque.
       </p>
-      {!isExpanded && (
+      {/* {!isExpanded && (
         <button
           type="button"
           className="mt-2 hidden text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block"
@@ -167,19 +164,19 @@ function AboutSection(props) {
         >
           Show more
         </button>
-      )}
+      )} */}
     </section>
   )
 }
 
 export function Layout({ children }) {
-  let hosts = ['Eric Gordon', 'Wes Mantooth']
+  let hosts = ['Markaz Quba', 'Leicester']
 
   return (
     <>
       <header className="bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-112 lg:items-start lg:overflow-y-auto xl:w-120">
         <div className="hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl]">
-          <span className="font-mono text-slate-500">Hosted by</span>
+          <span className="font-mono text-slate-500">MosqueICU®</span>
           <span className="mt-6 flex gap-6 font-bold text-slate-900">
             {hosts.map((host, hostIndex) => (
               <Fragment key={host}>
@@ -194,7 +191,7 @@ export function Layout({ children }) {
           </span>
         </div>
         <div className="relative z-10 mx-auto px-4 pb-4 pt-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:px-8 lg:py-12 xl:px-12">
-          <Link
+          {/* <Link
             href="/"
             className="relative mx-auto block w-48 overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl"
             aria-label="Homepage"
@@ -207,14 +204,14 @@ export function Layout({ children }) {
               priority
             />
             <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10 sm:rounded-xl lg:rounded-2xl" />
-          </Link>
+          </Link> */}
           <div className="mt-10 text-center lg:mt-12 lg:text-left">
             <p className="text-xl font-bold text-slate-900">
-              <Link href="/">Their Side</Link>
+              <Link href="/">Markaz Quba</Link>
             </p>
             <p className="mt-3 text-lg font-medium leading-8 text-slate-700">
-              Conversations with the most tragically misunderstood people of our
-              time.
+              Step inside, and immerse yourself in an environment dedicated to
+              the worship of God.
             </p>
           </div>
           <AboutSection className="mt-12 hidden lg:block" />
@@ -224,7 +221,7 @@ export function Layout({ children }) {
                 colors={['fill-indigo-300', 'fill-blue-300']}
                 className="h-2.5 w-2.5"
               />
-              <span className="ml-2.5">Listen</span>
+              <span className="ml-2.5">Our Feed</span>
             </h2>
             <div className="h-px bg-gradient-to-r from-slate-200/0 via-slate-200 to-slate-200/0 lg:hidden" />
             <ul
@@ -261,7 +258,7 @@ export function Layout({ children }) {
           <AboutSection />
           <h2 className="mt-8 flex items-center font-mono text-sm font-medium leading-7 text-slate-900">
             <PersonIcon className="h-3 w-auto fill-slate-300" />
-            <span className="ml-2.5">Hosted by</span>
+            <span className="ml-2.5">MosqueICU®</span>
           </h2>
           <div className="mt-2 flex gap-6 text-sm font-bold leading-7 text-slate-900">
             {hosts.map((host, hostIndex) => (
